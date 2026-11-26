@@ -1,0 +1,29 @@
+
+version: 2
+
+models:
+  - name: stg_ga4_events
+    columns:
+      - name: user_pseudo_id
+        data_tests:
+          - not_null
+
+  - name: customer_360_profile
+    columns:
+      - name: user_pseudo_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: customer_rfm
+    columns:
+      - name: user_pseudo_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: campaign_performance
+    columns:
+      - name: campaign_id
+        data_tests:
+          - not_null
